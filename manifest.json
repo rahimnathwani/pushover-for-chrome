@@ -1,0 +1,24 @@
+{
+  "name": "Pushover for Google Chrome",
+  "version": "0.0.1.3",
+  "description": "Pushover for Google Chrome, with your own key and token.",
+  "browser_action": {
+    "default_icon": "128.png",
+    "default_title": "Push this page!"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "icons": {
+      "128": "128.png"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["content_script.js"]
+  }],
+  "manifest_version": 2
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <title>Pushover for Google Chrome</title>
+    <style type="text/css">
+        body {
+            background-color: rgb(164, 208, 223);
+            padding: 80px;
+            font-family: Helvetica, Arial, Serif;
+        }
+        input, button {
+            border-radius: 5px;
+            background-color: rgb(235, 235, 235);
+            padding: 5px;
+            font-weight: bold;
+            border: 1px solid rgb(12, 40, 99);
+        }
+        input {
+            width: 300px;
+        }
+        td {
+            padding: 5px;
+        }
+        td:first-child {
+            text-align: right;
+            font-weight: bold;
+        }
+        #message {
+            font-size: 20px;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pushover for Google Chrome</h1>
+    <table>
+        <tr>
+            <td>Get yours here:
+            <td><a href="https://pushover.net/" target=_blank>https://pushover.net</a>
+        <tr>
+            <td>Your User Key:
+            <td><input id='userkey'>
+        <tr>
+            <td>API Token/Key:
+            <td><input id='token'>
+        <tr>
+            <td>
+            <td><button id='save'>Save</button>
+        <tr>
+            <td>
+            <td id='message'>
+    </table>
+    <script type="text/javascript" src="options.js"></script>
+</body>
+</html>
